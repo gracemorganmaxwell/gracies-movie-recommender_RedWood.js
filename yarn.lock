@@ -4409,6 +4409,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@redwoodjs/auth-netlify-api@npm:4.5.0":
+  version: 4.5.0
+  resolution: "@redwoodjs/auth-netlify-api@npm:4.5.0"
+  dependencies:
+    "@babel/runtime-corejs3": 7.21.0
+    core-js: 3.30.0
+    jsonwebtoken: 9.0.0
+  checksum: 3c5d039f2682cfe887dc7cff5ca869d1ef4501d24acb1620cda51c003b6fdad3bb5401e6192b2069269f414f425372c93e0b68e76b8a51251117977f280b0521
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/auth-netlify-setup@npm:4.5.0":
+  version: 4.5.0
+  resolution: "@redwoodjs/auth-netlify-setup@npm:4.5.0"
+  dependencies:
+    "@babel/runtime-corejs3": 7.21.0
+    "@redwoodjs/cli-helpers": 4.5.0
+    core-js: 3.30.0
+  checksum: 4b0e4dde7f0f477f0d47c5678d65a663383dbd9c87d48d03563f0cb9f1253c6f7ccb06e96bfc61c1e148667d8acd6b512f5e2c43a0350c5bc4946c5049a649ee
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/auth-netlify-web@npm:4.5.0":
+  version: 4.5.0
+  resolution: "@redwoodjs/auth-netlify-web@npm:4.5.0"
+  dependencies:
+    "@babel/runtime-corejs3": 7.21.0
+    "@redwoodjs/auth": 4.5.0
+    core-js: 3.30.0
+  peerDependencies:
+    netlify-identity-widget: 1.9.2
+  checksum: 6bd2733a625cebec5524d82b82da2a96ce35bddcbd7d621ef1109e94da147034564bb90826bf6948449ae83288f329dca65039849691f88430c1e3ed7e041467
+  languageName: node
+  linkType: hard
+
 "@redwoodjs/auth@npm:4.5.0":
   version: 4.5.0
   resolution: "@redwoodjs/auth@npm:4.5.0"
@@ -7997,6 +8032,7 @@ __metadata:
   resolution: "api@workspace:api"
   dependencies:
     "@redwoodjs/api": 4.5.0
+    "@redwoodjs/auth-netlify-api": 4.5.0
     "@redwoodjs/graphql-server": 4.5.0
   languageName: unknown
   linkType: soft
@@ -17833,6 +17869,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"netlify-identity-widget@npm:^1":
+  version: 1.9.2
+  resolution: "netlify-identity-widget@npm:1.9.2"
+  checksum: fcdc960f3228cdb4c1e6a1c98ca92f570d00d7914d9579712a16ef7ec72fe6d4396fbe07b24e9f9ca2fc12fd724d3193a40d97ed99c7690f209f329ae591af24
+  languageName: node
+  linkType: hard
+
 "new-github-issue-url@npm:0.2.1":
   version: 0.2.1
   resolution: "new-github-issue-url@npm:0.2.1"
@@ -21012,6 +21055,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@redwoodjs/auth-netlify-setup": 4.5.0
     "@redwoodjs/core": 4.5.0
   languageName: unknown
   linkType: soft
@@ -23961,9 +24005,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:web"
   dependencies:
+    "@redwoodjs/auth-netlify-web": 4.5.0
     "@redwoodjs/forms": 4.5.0
     "@redwoodjs/router": 4.5.0
     "@redwoodjs/web": 4.5.0
+    netlify-identity-widget: ^1
     prop-types: 15.8.1
     react: 17.0.2
     react-dom: 17.0.2
