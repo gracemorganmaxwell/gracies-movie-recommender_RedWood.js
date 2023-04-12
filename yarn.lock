@@ -17888,6 +17888,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"netlify-plugin-prisma-provider@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "netlify-plugin-prisma-provider@npm:0.3.0"
+  dependencies:
+    glob: ^7.1.6
+  checksum: bc2fb13ae408dfed7127efdfe931f52f6a35026f596c73e2d60d56f065fbb96f34bb7e3c87366b7abad3caf83844ceab3230ce600b91c71298c5edf0d1daa1f7
+  languageName: node
+  linkType: hard
+
 "new-github-issue-url@npm:0.2.1":
   version: 0.2.1
   resolution: "new-github-issue-url@npm:0.2.1"
@@ -21076,6 +21085,7 @@ __metadata:
   dependencies:
     "@redwoodjs/auth-netlify-setup": 4.5.0
     "@redwoodjs/core": 4.5.0
+    netlify-plugin-prisma-provider: ^0.3.0
   languageName: unknown
   linkType: soft
 

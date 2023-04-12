@@ -119,3 +119,6 @@ The best way to learn Redwood is by going through the comprehensive [tutorial](h
 
 - Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
 - [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f9207a2-bf76-4a8a-8f1d-2febcd835020/deploy-status)](https://app.netlify.com/sites/curious-syrniki-5f3e26/deploys)
