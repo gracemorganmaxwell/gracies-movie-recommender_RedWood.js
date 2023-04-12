@@ -5,6 +5,7 @@
   "dependencies": {
     "@redwoodjs/api": "4.5.0",
     "@redwoodjs/auth-netlify-api": "4.5.0",
-    "@redwoodjs/graphql-server": "4.5.0"
+    "@redwoodjs/graphql-server": "4.5.0",
+    "axios": "^1.3.5"
   }
 }
