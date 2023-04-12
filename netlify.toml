@@ -1,9 +1,14 @@
 [build]
-  command = "yarn rw deploy netlify && yarn rw db up --no-db-client --auto-approve && yarn rw dataMigrate up"
+  command = "yarn rw build"
   publish = "web/dist"
-  functions = "api/dist/functions"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[plugins]]
+  package = "@netlify/plugin-prisma-provider"
+
+[functions]
+  directory = "api/dist/functions"
