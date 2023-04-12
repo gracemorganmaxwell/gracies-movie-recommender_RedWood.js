@@ -1,24 +1,23 @@
-import axios from 'axios'
+// Import movie data fetcher functions
+import {
+  searchMovies,
+  getMovieDetails,
+  getSimilarMovies,
+} from './movieDataFetcher'
 
-const apiKey = '90b5c42607cd2b6c58cce8a648cdc1f3'
-const tmdbClient = axios.create({
-  baseURL: 'https://api.themoviedb.org/3',
-  params: {
-    api_key: apiKey,
-  },
-})
-
-export const searchMovies = async (query) => {
-  const response = await tmdbClient.get('/search/movie', { params: { query } })
-  return response.data.results
+// Define resolvers
+export const searchMoviesResolver = async ({ query }) => {
+  return searchMovies(query)
 }
 
-export const getMovieDetails = async (id) => {
-  const response = await tmdbClient.get(`/movie/${id}`)
-  return response.data
+export const getMovieDetailsResolver = async ({ id }) => {
+  return getMovieDetails(id)
 }
 
-export const getSimilarMovies = async (id) => {
-  const response = await tmdbClient.get(`/movie/${id}/similar`)
-  return response.data.results
+export const getSimilarMoviesResolver = async ({ id }) => {
+  return getSimilarMovies(id)
 }
+
+/* Above here the Query function implements the logic to search for movies using the movie data fetcher.
+ This file contains the GraphQL service, which maps the GraphQL queries to the data fetching functions in api>src>servcies>movieDataFetcher.js.
+*/
