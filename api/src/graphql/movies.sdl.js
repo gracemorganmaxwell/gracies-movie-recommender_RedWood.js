@@ -9,8 +9,8 @@ export const schema = gql`
   }
 
   type Query {
-    searchMovies(query: String!): [Movie!]!
-    getMovieDetails(id: Int!): Movie
-    getSimilarMovies(id: Int!): [Movie!]!
+    searchMovies(query: String!): [Movie!]! @skipAuth
+    getMovieDetails(id: Int!): Movie @skipAuth
+    getSimilarMovies(id: Int!): [Movie!]! @skipAuth
   }
 `

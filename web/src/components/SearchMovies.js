@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { useQuery } from '@redwoodjs/web'
+import { useQuery, gql } from '@redwoodjs/web'
 
 import Movie from './Movie'
 
