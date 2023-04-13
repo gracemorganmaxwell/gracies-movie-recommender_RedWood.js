@@ -1,6 +1,10 @@
 [build]
   command = "yarn rw build"
   publish = "web/dist"
+  functions = "api/dist/functions"
+
+[dev]
+  command = "yarn rw dev"
 
 [[redirects]]
   from = "/*"
@@ -8,7 +12,4 @@
   status = 200
 
 [[plugins]]
-  package = "@netlify/plugin-prisma-provider"
-
-[functions]
-  directory = "api/dist/functions"
+package = "netlify-plugin-prisma-provider"
