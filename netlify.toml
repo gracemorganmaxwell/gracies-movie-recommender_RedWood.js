@@ -3,13 +3,10 @@
   publish = "web/dist"
   functions = "api/dist/functions"
 
-[dev]
-  command = "yarn rw dev"
+[[plugins]]
+  package = "netlify-plugin-prisma-provider"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[plugins]]
-package = "netlify-plugin-prisma-provider"
